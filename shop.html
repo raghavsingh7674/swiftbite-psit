@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftBite@PSIT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            height: 60vh;
+        }
+
+        /* Header */
+        .header h1 {
+            font-size: 2.5rem;
+            color: #ff5722;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        /* Shops Section */
+        .shops {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .shop-card {
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .shop-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .shop-card h2 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .shop-card p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .shop-card button {
+            background: #ff5722;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .shop-card button:hover {
+            background: #e64a19;
+        }
+
+        /* Footer */
+        .footer {
+            height: 40vh;
+            background: #333;
+            color: #fff;
+            font-size: 0.9rem;
+            overflow-y: scroll;
+        }
+
+        .footer {
+            width: 100%;
+            background: #333;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            line-height: 20px;
+            letter-spacing: 1px;
+            font-family: "Oswald", serif;
+            font-optical-sizing: auto;
+        }
+        .footerb {
+            height: 180px;
+            width: 300px;
+            float: left;
+            color: white;
+            text-align: center;
+
+
+
+        }
+
+
+        .footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .shops {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="C:\Users\Raghav Singh\Downloads\Screenshot_2025-01-02_162327-removebg-preview-transformed (1).png"  style="width:220px"></img>
+			<h1>Welcome to SwiftBite@PSIT</h1>
+            <p>Select your favorite shop and enjoy delicious food!</p>
+        </header>
+
+        <div class="shops">
+            <div class="shop-card" onclick="redirectToPage('index.html')">
+                <h2>Cafe@2004</h2>
+                <p>Cozy ambiance with a wide range of snacks and beverages.</p>
+                <button>Visit Cafe@2004</button>
+            </div>
+            <div class="shop-card" onclick="redirectToPage('#')">
+                <h2>Samocha</h2>
+                <p>A unique fusion of samosas and tea blends.</p>
+                <button>Visit Samocha</button>
+            </div>
+            <div class="shop-card" onclick="redirectToPage('#')">
+                <h2>CHE</h2>
+                <p>Authentic cuisine served with a modern twist.</p>
+                <button>Visit CHE</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footerb">
+            <b> Quick Link </b>
+            <br><br><br>
+            Home<br>
+            About<br>
+            Menu<br>
+            Order<br>
+            Contact<br>
+
+        </div>
+
+        <div class="footerb">
+            <b> Menu </b>
+            <br><br><br>
+            Aloo-Paratha<br>
+            Burger<br>
+            Chowmin<br>
+            Chilli-Potato<br>
+            White-Pasta<br>
+
+
+        </div>
+        <div class="footerb">
+
+            <b> Address </b>
+            <br><br><br>
+            Address: CAFE(2004)@PSIT KANPUR
+            <br>
+            E-mail:psitkanpur@gmail.com<br>
+            Mobile: 8787****17<br>
+            Time: Morning (9:00)AM to Evening (6:00)PM <br>
+
+
+
+
+
+
+
+        </div>
+        <div class="footerb">
+            <b> Direction </b>
+            <br><br><br>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.14353701965!2d80.18850957525511!3d26.4511017769253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c49f74997c4a1%3A0x533d41a0ec3241f3!2sCafe%202004!5e0!3m2!1sen!2sin!4v1735421741450!5m2!1sen!2sin"
+                width="300" height="120" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+
+    <script>
+        function redirectToPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
+    </script>
+</body>
+
+</html>
